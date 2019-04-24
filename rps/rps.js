@@ -34,13 +34,15 @@ var checkoutcome = function(userGuess,computerGuess)
 }
 
 //add comment
-var validateinput = function(userGuess){
-  if (userGuess !=="r"&&userGuess !=="p"&& userGuess !=="s"){
-    document.getElementById("error").innerHTML = "ERROR NOT A VALID CHOICE";
-  }
+var validateinput = function(userGuess)
+{if ((userGuess === "r")||(userGuess === "s")||(userGuess === "p")){document.getElementById("error").textContent = ""}
 
-
+else{document.getElementById("error").innerHTML = "ERROR NOT A VALID CHOICE";}
 }
+ 
+
+  
+
 
 // This function is run whenever the user presses a key.
 document.onkeyup = function(event) {
