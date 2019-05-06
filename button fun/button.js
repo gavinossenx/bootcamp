@@ -10,20 +10,17 @@ fetch('https://rickandmortyapi.com/api/character/?name=smith&status=alive')
         }
         console.log(familytree)
         for (i=0; i<familytree.length;i++){
-        document.getElementById("names").innerText +=" "+ familytree[i].name
-        document.getElementById("dimention").innerText += " " +familytree[i].origin.name
-        var node = document.createElement("img");
-        var image =document.getElementById("image")
-        node.setAttribute("src",familytree[i].image);
-        image.appendChild(node);
-
-       
-        
-        
-        
-        
-       
-  }
-    })
-  })
+          function addCharacterToHtml(){
+            var node = document.createElement("div")
+            var img = document.createElement("img")
+            var character = document.getElementById('characters')
+            character.appendChild(node)
+            node.appendChild(img)
+            img.setAttribute("src",familytree[i].image)
+            node.insertAdjacentText("beforebegin","Name:"+familytree[i].name+"|"+"Origin:"+familytree[i].origin.name+"|"+"Status"+familytree[i].status+"|"+"Species:"+familytree[i].species)
+          }addCharacterToHtml()
+        }
+    })  
+  }) 
   const familytree = [];
+  
