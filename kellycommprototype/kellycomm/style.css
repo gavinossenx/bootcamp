@@ -1,0 +1,170 @@
+@font-face { font-family:MontSerrat; src: url('./fonts/Montserrat-Regular.ttf'); } 
+body{
+    margin:0;
+    padding:0;
+    width:100%
+}
+.container-WhoWeAre{
+  display:inline-flex;
+  flex-wrap: row wrap;
+  padding-top:5em;
+}
+#integrityContent {
+    display:inline-block;  
+    width:50%; 
+    margin-top:12%;
+    padding:1em;
+}
+#leadership{
+  margin-top:12%;
+  display:inline-block;
+  width:50%;
+  padding:1em;
+}
+#menubar{
+    transition:.2s;
+    background-color:#DCDDDE;
+    border-color: rgb(200,200,200);
+    display:inline-flex;
+    align-items:center;
+    width:100%;
+    margin:0;
+    top: 0; /* At the top */
+    z-index: 99; 
+    position:fixed;
+}
+#imgbox{
+  display:inline-flex;
+}
+.ul1 {
+    list-style-type: none;
+    margin:0;
+    justify-content:flex-end;
+    width:100%;
+    padding:0;
+    display:inline-flex;
+    align-content:center;
+    padding-right:4em;
+  }
+  .li1{
+    display:inline-flex;
+    color:#005596;
+    flex-flow:row wrap;
+    justify-content:space-between;
+    padding-left:8em;
+    align-content:center;
+  }
+  .projectlist{
+    display:inline-block;
+    flex-wrap: row wrap;
+    justify-content: space-around;
+  }
+  .li2{
+    display:inline-block;
+    margin:1em;
+    width:28%;
+    padding:1em;
+  }
+  img{
+      transition:.2s;
+      width:310px;
+      height:160px;
+      display:inline-flex;
+      padding:2em;
+      padding-left:5em;
+      
+  }
+/*@media screen and (max-width: 1700px) {
+    li {
+      display:inline-flex;
+      color:#005596;
+      flex-flow:row wrap;
+      justify-content:space-between;
+      padding-left:3em;
+      float:right;
+      align-content:center;
+    }
+    ul {
+      list-style-type: none;
+      margin:0;
+      justify-content:flex-end;
+      width:100%;
+      padding:0;
+      display:inline-flex;
+      align-content:center;
+      padding-right:4em;
+    }
+  }*/
+  @media screen and (max-width:920px){
+      .servicebox1{
+        display:block
+      }
+      .servicebox2{
+        display:block
+      }
+      .container-WhoWeAre{
+        display:inline-block;
+      }
+      li{
+       padding:0;
+       align-content:center;
+       display:inline-flex;
+       color:#005596;
+       flex-flow:row wrap;
+       justify-content:center;
+       padding-left:0em;
+       float:right;
+      }
+      img{
+        width: 150.5px;
+        height:80px;
+        padding:2em;
+      }
+      #menubar{
+        transition:.2s;
+        background-color:#DCDDDE;
+        border-color: rgb(200,200,200);
+        display:inline-flex;
+        align-items:center;
+        width:100%;
+        margin:0;
+        top: 0; /* At the top */
+        z-index: 99; 
+        position:fixed;
+    }
+      ul {
+        flex-direction:column;
+        list-style-type: none;
+        margin:0;
+        justify-content:center;
+        width:100%;
+        padding:0;
+        display:inline-flex;
+        align-content:center;
+      }
+  }
+  .Services{
+    display:inline-block;
+    flex-wrap: row wrap;
+    justify-content: space-around;
+  }
+  
+  .ServicesContent{
+    display:inline-block;
+    margin:1em;
+    width:28%;
+    padding:1em;
+  }
+  .imageslider{
+    display:inline-block;
+    flex-wrap: row wrap;
+    justify-content: space-around;
+  }
+.images{
+  display:inline-block;
+  margin:1em;
+  width:28%;
+  padding:1em;
+
+}
+  #0055964g0
